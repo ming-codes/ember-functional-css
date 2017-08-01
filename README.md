@@ -1,6 +1,19 @@
 # ember-functional-css
 
-This README outlines the details of collaborating on this Ember addon.
+Experimental addon that extracts class names from template and compile them
+as SCSS mixin includes.
+
+Example.
+
+```hbs
+<div class="ui-button(primary,small)"></div>
+```
+
+Will emit SCSS stylesheet
+
+```scss
+@include ui-button(primary,small);
+```
 
 ## Installation
 
